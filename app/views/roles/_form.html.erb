@@ -1,0 +1,7 @@
+<%= simple_form_for @role do |f| %>
+ 
+	<%=	f.input :cname%>
+	<%= f.association :movie%>
+	<%= f.button :submit%>
+ 
+<% end %>
