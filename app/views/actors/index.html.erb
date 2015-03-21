@@ -2,14 +2,12 @@
  
 <table class="table">
   <tr>
-    <th>First Name</th>
-    <th>Last Name</th>
+    <th>Name</th>
   </tr>
  
   <% @actors.each do |actor| %>
     <tr>
-      <td><%= actor.fname %></td>
-      <td><%= actor.lname %></td>
+      <td><%= actor.fname %> <%= actor.lname %></td>
       <td><%= link_to 'Show', actor_path(actor) %></td>
       <td><%= link_to 'Edit', edit_actor_path(actor) %></td>
       <td><%= link_to 'Destroy', actor_path(actor),
